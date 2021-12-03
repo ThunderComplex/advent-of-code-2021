@@ -1,15 +1,18 @@
-use itertools::Itertools;
 use crate::helper::input_helper::*;
+use itertools::Itertools;
 
 pub fn day1() {
-    let lines: Vec<u16> = read_input_lines(1).unwrap();
+    let lines: Vec<u16> = read_input_lines(1);
     let mut increased_counter = 0;
 
-    lines.iter().zip(lines.iter().skip(1)).for_each(|(first, second)| {
-        if second > first {
-            increased_counter += 1
-        }
-    });
+    lines
+        .iter()
+        .zip(lines.iter().skip(1))
+        .for_each(|(first, second)| {
+            if second > first {
+                increased_counter += 1
+            }
+        });
 
     println!("There are {} increased depths", increased_counter);
 
