@@ -1,0 +1,6 @@
+/target
+/.vscode
+
+/src/input/*
+
+!/**/.gitkeep
