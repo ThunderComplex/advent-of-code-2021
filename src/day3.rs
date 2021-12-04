@@ -4,7 +4,7 @@ pub fn day3() {
     let lines: Vec<String> = read_input_lines(3);
     let bits = lines[0].len();
     let mut gamma_rate = 2usize.pow((bits).try_into().unwrap()) - 1;
-    let mut epsilon_rate = gamma_rate.clone();
+    let mut epsilon_rate = gamma_rate;
 
     let mut continue_oxygen_filtering = true;
     let mut continue_co2_filtering = true;
