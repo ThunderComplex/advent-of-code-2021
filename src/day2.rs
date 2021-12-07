@@ -16,6 +16,7 @@ struct Instruction {
 }
 
 pub fn day2() {
+    println!("--- DAY 2 ---");
     let lines: Vec<String> = read_input_lines(2);
     let instruction_list: Vec<Instruction> = lines
         .iter()

@@ -79,6 +79,7 @@ impl Board {
 }
 
 pub fn day4() {
+    println!("--- DAY 4 ---");
     let lines: Vec<String> = read_input_lines(4);
     let drawn_numbers = &lines[0];
     let mut board_line_counter = 0;

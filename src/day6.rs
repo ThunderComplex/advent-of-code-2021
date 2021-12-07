@@ -3,6 +3,7 @@ use std::collections::HashMap;
 use crate::helper::input_helper::*;
 
 pub fn day6() {
+    println!("--- DAY 6 ---");
     let lines: Vec<String> = read_input_lines(6);
     let blowfish_list: Vec<u8> = lines
         .first()
@@ -39,5 +40,5 @@ pub fn day6() {
 
     let blowfish_count: usize = blowfish_map.into_values().sum();
 
-    println!("There are {} blowfishies after 80 days!", blowfish_count);
+    println!("There are {} blowfishies after 256 days!", blowfish_count);
 }

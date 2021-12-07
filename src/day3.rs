@@ -1,6 +1,7 @@
 use crate::helper::input_helper::*;
 
 pub fn day3() {
+    println!("--- DAY 3 ---");
     let lines: Vec<String> = read_input_lines(3);
     let bits = lines[0].len();
     let mut gamma_rate = 2usize.pow((bits).try_into().unwrap()) - 1;

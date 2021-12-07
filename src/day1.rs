@@ -2,6 +2,7 @@ use crate::helper::input_helper::*;
 use itertools::Itertools;
 
 pub fn day1() {
+    println!("--- DAY 1 ---");
     let lines: Vec<u16> = read_input_lines(1);
     let mut increased_counter = 0;
 

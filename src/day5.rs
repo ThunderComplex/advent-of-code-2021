@@ -10,6 +10,7 @@ struct Line {
 }
 
 pub fn day5() {
+    println!("--- DAY 5 ---");
     let lines: Vec<String> = read_input_lines(5);
     let line_list: Vec<Line> = lines
         .iter()
